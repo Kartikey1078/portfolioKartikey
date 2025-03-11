@@ -1,7 +1,8 @@
 import React from 'react';
 import BlackOutName from './components/BlackOutName';
 import AnimatedCursor from "react-animated-cursor";
-
+import LandingPage from './components/LandingPage';
+import './App.css'
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
         outerScale={2}
       />
       <BlackOutName />
+      <LandingPage />
     </>
   );
 }
