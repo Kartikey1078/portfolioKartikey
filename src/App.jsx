@@ -3,6 +3,7 @@ import BlackOutName from './components/BlackOutName';
 import AnimatedCursor from "react-animated-cursor";
 import LandingPage from './components/LandingPage';
 import './App.css'
+import Pkg from './components/Pkg';
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
       />
       <BlackOutName />
       <LandingPage />
+      <Pkg></Pkg>
     </>
   );
 }
