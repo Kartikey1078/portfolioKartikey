@@ -113,7 +113,7 @@ const LandingPage = () => {
                 <span className="textItalic ml-2 mr-2">a</span>
               </span>
 
-              <span className=" text-4xl sm:text-wrap sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl textFont">
+              <span className="text-nowrap text-4xl sm:text-wrap sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl textFont">
                 <div>
                   <span>FULL</span>-<span>STACK</span>
                 </div>
