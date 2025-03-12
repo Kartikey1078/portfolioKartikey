@@ -10,12 +10,12 @@ const LandingPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [show, setShow] = useState(false);
   useLayoutEffect(() => {
-    const timer = setTimeout(() => setShow(true), 2000);
+    const timer = setTimeout(() => setShow(true), 1900);
     return () => clearTimeout(timer);
   }, []);
   const fadeIn = useSpring({
     opacity: show ? 1 : 0,
-    config: { duration: 1000 },
+    config: { duration: 500 },
   });
   return (
     <>
