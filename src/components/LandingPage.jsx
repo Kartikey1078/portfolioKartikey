@@ -102,37 +102,37 @@ const LandingPage = () => {
             </ul>
           </div>
 
-          <div className="font-medium w-[80%] sm:w-[80%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
+          <div className="font-medium w-[80%] sm:w-[90%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
             <p className="flex items-baseline">
               <span
                 style={{ fontStyle: "italic" }}
-                className="text-nowrap text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mr-2 sm:mr-4 flex flex-col sm:flex-row items-center sm:items-start"
+                className="text-nowrap text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl "
               >
                 <span className="textItalic">I'm</span>
-                <span className="textItalic ml-5">a</span>
+                <span className="textItalic ml-2 mr-2">a</span>
               </span>
 
-              <span className="text-wrap text-5xl sm:text-wrap sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl textFont">
+              <span className=" text-4xl sm:text-wrap sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl textFont">
                 <div>
                   <span>FULL</span>-<span>STACK</span>
                 </div>
               </span>
             </p>
             <p className="text-nowrap text-right textFont">
-              <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-nowrap">
+              <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-nowrap">
                 DEVELOPER
               </span>
-              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl ml-2 sm:ml-4">
+              <span className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl ml-2 sm:ml-4">
                 &
               </span>
             </p>
             <p className="text-nowrap text-left textFont">
-              <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-nowrap">
+              <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-nowrap">
                 SOFTWARE
               </span>
             </p>
             <p className="text-nowrap text-right textFont">
-              <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-nowrap">
+              <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-nowrap">
                 ENGINEER
               </span>
             </p>
