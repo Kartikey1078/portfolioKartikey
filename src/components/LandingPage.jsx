@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-// import vedio from "../assets/BGVedio.mp4";
 import vedio from "../assets/Earth.mp4";
 import { useContext } from "react";
 import { DataContext } from "./UserContext";
-import { Menu, X } from "lucide-react"; // Icons for menu
+import { Menu, X } from "lucide-react"; 
 import "./LandingPage.css";
+
 const LandingPage = () => {
   const { isTrue } = useContext(DataContext);
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ const LandingPage = () => {
     <>
       {isTrue && (
         <div className="relative">
-          {/* ✅ Navbar */}
+         
           <nav className="fixed top-0 left-0 w-full text-amber-50 p-4 z-50">
             <div className="flex items-center justify-between w-[95%] mx-auto">
               <div>
@@ -22,7 +22,7 @@ const LandingPage = () => {
                 </p>
               </div>
 
-              {/* ✅ Mobile Menu Button */}
+            
               <button
                 className="md:hidden text-white"
                 onClick={() => setIsOpen(true)}

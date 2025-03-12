@@ -13,7 +13,7 @@ function BlackOutName() {
       setToggle(false);
       setHide(true);
       setISTrue(true);
-    }, 2000); // Slightly reduced duration for a snappier effect
+    }, 2000); 
 
     return () => clearTimeout(timer);
   }, [setISTrue]);
@@ -28,7 +28,7 @@ function BlackOutName() {
     to: toggle
       ? { top: "50%", opacity: 1 }
       : { opacity: 0 },
-    config: { tension: 200, friction: 20 }, // More natural easing
+    config: { tension: 200, friction: 20 }, 
   });
 
   const moveUp = useSpring({
