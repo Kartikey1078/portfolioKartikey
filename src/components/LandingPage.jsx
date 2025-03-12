@@ -1,18 +1,26 @@
-import React, { useState } from "react";
+import React, { useState,useLayoutEffect } from "react";
 import vedio from "../assets/Earth.mp4";
 import { useContext } from "react";
 import { DataContext } from "./UserContext";
 import { Menu, X } from "lucide-react"; 
 import "./LandingPage.css";
-
+import { useSpring, animated } from "@react-spring/web"; 
 const LandingPage = () => {
   const { isTrue } = useContext(DataContext);
   const [isOpen, setIsOpen] = useState(false);
-
+  const [show, setShow] = useState(false);
+  useLayoutEffect(() => {
+    const timer = setTimeout(() => setShow(true), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+  const fadeIn = useSpring({
+    opacity: show ? 1 : 0,
+    config: { duration: 1000 },
+  });
   return (
     <>
       {isTrue && (
-        <div className="relative">
+        <animated.div style={fadeIn} className="relative">
          
           <nav className="fixed top-0 left-0 w-full text-amber-50 p-4 z-50">
             <div className="flex items-center justify-between w-[95%] mx-auto">
@@ -149,7 +157,7 @@ const LandingPage = () => {
           >
             <source src={vedio} type="video/mp4" />
           </video>
-        </div>
+        </animated.div>
       )}
     </>
   );

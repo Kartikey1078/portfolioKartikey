@@ -9,10 +9,11 @@ function BlackOutName() {
 
   useLayoutEffect(() => {
     setToggle(true);
+    setISTrue(true);
     const timer = setTimeout(() => {
       setToggle(false);
       setHide(true);
-      setISTrue(true);
+     
     }, 2000); 
 
     return () => clearTimeout(timer);
