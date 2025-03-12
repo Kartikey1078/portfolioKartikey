@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import vedio from "../assets/LP.mov";
+import vedio from "../assets/BGVedio.mp4";
 import { useContext } from "react";
 import { DataContext } from "./UserContext";
 import { Menu, X } from "lucide-react"; // Icons for menu
