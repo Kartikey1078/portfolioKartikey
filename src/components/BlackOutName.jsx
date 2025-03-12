@@ -1,19 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useSpring, animated } from "@react-spring/web";
+import { DataContext } from "./UserContext"; // ✅ Import DataContext
 
 function BlackOutName() {
   const [toggle, setToggle] = useState(false);
   const [hide, setHide] = useState(false);
+  const { setISTrue } = useContext(DataContext); // ✅ Use DataContext
 
   useEffect(() => {
     setToggle(true);
     const timer = setTimeout(() => {
       setToggle(false);
       setHide(true);
+      setISTrue(true); // ✅ Update context correctly
     }, 2500);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [setISTrue]); // ✅ Add dependency to useEffect
 
   const move = useSpring({
     from: {
@@ -38,7 +41,10 @@ function BlackOutName() {
   });
 
   return (
-    <animated.div style={moveUp} className="relative w-[100vw] bg-black overflow-hidden">
+    <animated.div
+      style={moveUp}
+      className="relative w-[100vw] bg-black overflow-hidden"
+    >
       <animated.p
         style={{ position: "absolute", ...move }}
         className="text-cyan-50 border-2 border-white rounded-full p-3 w-[200px] text-center text-xl"
