@@ -4,10 +4,12 @@ import AnimatedCursor from "react-animated-cursor";
 import LandingPage from "./components/LandingPage";
 import "./App.css";
 import UserContext from "./components/UserContext"; // ✅ Correct import
+import About from "./components/About";
 
 const App = () => {
   return (
-    <UserContext> {/* ✅ Make sure this is wrapping everything */}
+    <>
+    <UserContext> 
       <AnimatedCursor
         innerSize={15}
         outerSize={30}
@@ -19,6 +21,8 @@ const App = () => {
       <BlackOutName />
       <LandingPage />
     </UserContext>
+    <About></About>
+    </>
   );
 };
 

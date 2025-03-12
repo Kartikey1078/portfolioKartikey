@@ -30,7 +30,6 @@ const LandingPage = () => {
                 </p>
               </div>
 
-            
               <button
                 className="md:hidden text-white"
                 onClick={() => setIsOpen(true)}
@@ -38,7 +37,6 @@ const LandingPage = () => {
                 <Menu size={32} />
               </button>
 
-              {/* ✅ Desktop Navigation */}
               <div className="hidden md:flex space-x-6">
                 <a href="#about" className="hover:text-white">
                   About
@@ -56,13 +54,11 @@ const LandingPage = () => {
             </div>
           </nav>
 
-          {/* ✅ Sidebar (Mobile Menu) */}
           <div
             className={`fixed top-0 left-0 w-64 h-full bg-black text-white transform ${
               isOpen ? "translate-x-0" : "-translate-x-full"
             } transition-transform duration-300 ease-in-out z-50 md:hidden`}
           >
-            {/* Close Button */}
             <button
               className="absolute top-4 right-4 text-white"
               onClick={() => setIsOpen(false)}
@@ -70,7 +66,6 @@ const LandingPage = () => {
               <X size={32} />
             </button>
 
-            {/* Sidebar Links */}
             <ul className="flex flex-col items-start p-6 space-y-6 mt-16">
               <li>
                 <a
@@ -147,7 +142,6 @@ const LandingPage = () => {
             </p>
           </div>
 
-          {/* ✅ Background Video */}
           <video
             className="w-screen h-screen object-cover"
             autoPlay
